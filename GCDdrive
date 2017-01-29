@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<ctype.h>
+
+int main (void ) {
+	
+	int GCDreasult; 
+	
+	printf( " test GCD number : ");
+		
+	GCDreasult 	= Gcd (10,25); 
+	
+	printf("GCD is 10 and 20 = %d", GCDreasult);
+	return 0;
+	
+}
+
+
+int Gcd (int a,int b) {
+	
+	
+	if ( b==0 ) 
+		
+		return a;
+	
+	
+	if ( a==0) 
+		
+	  return b; 
+	
+	  return ( b , a % b );
+	
+}
